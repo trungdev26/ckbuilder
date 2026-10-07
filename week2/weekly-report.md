@@ -148,7 +148,7 @@ See the [CCC Playground evidence folder](./ccc-playground/).
 
 ## 8. Challenges
 
-The most time-consuming part was preparing the Windows toolchain for the Simple Lock example. Building the contract required Rust, `ckb-debugger`, the Visual C++ linker, and the Windows SDK. The example scripts also needed small Windows compatibility fixes for executable paths and Node.js entry-point detection.
+Setting up the Simple Lock example on Windows took some extra work because several build tools were required.
 
 The token exercise also showed why local Devnet state needs to be checked carefully. Old token Cells remained visible after earlier attempts, so I repeated the flow with a fresh account and confirmed the result by comparing token args, Lock Script args, and token amounts instead of relying only on Cell numbering.
 
