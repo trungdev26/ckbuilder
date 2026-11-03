@@ -1,0 +1,62 @@
+
+> week5-script@0.1.0 test:only
+> jest --runInBand --cacheDirectory .jest-cache -t recipient substitution|second output
+
+(node:32972) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+FAIL tests/time-hash-lock.mock.test.ts (9.713 s)
+  time-hash-lock mock unlock
+    × rejects recipient substitution (error 6) (249 ms)
+    × checks the second output too (error 6) (189 ms)
+    ○ skipped compares bytecode and bundled JavaScript
+    ○ skipped unlocks with the correct passphrase and since
+    ○ skipped accepts a later timestamp
+    ○ skipped rejects a wrong passphrase (error 3)
+    ○ skipped rejects a timestamp below the minimum (error 4)
+    ○ skipped rejects missing since (error 5)
+    ○ skipped rejects the wrong since metric (error 5 in v2)
+    ○ skipped rejects a missing witness (error 2)
+    ○ skipped rejects invalid args (error 1)
+    ○ skipped checks every input in the lock group (error 4)
+
+  ● time-hash-lock mock unlock › rejects recipient substitution (error 6)
+
+    assert.fail(received, expected)
+
+    Message:
+      Transaction verification should fail. No verification failure occurred.
+
+      47 | describe('time-hash-lock mock unlock', () => {
+      48 |   test('rejects recipient substitution (error 6)', async () => {
+    > 49 |     await mockUnlock({ attacker: true }).verifyFailure(6);
+         |     ^
+      50 |   });
+      51 |   test('checks the second output too (error 6)', async () => {
+      52 |     await mockUnlock({ secondAttacker: true }).verifyFailure(6);
+
+      at Verifier.verifyFailure (node_modules/ckb-testtool/dist.commonjs/unittest/core.js:627:26)
+      at Object.<anonymous> (tests/time-hash-lock.mock.test.ts:49:5)
+
+  ● time-hash-lock mock unlock › checks the second output too (error 6)
+
+    assert.fail(received, expected)
+
+    Message:
+      Transaction verification should fail. No verification failure occurred.
+
+      50 |   });
+      51 |   test('checks the second output too (error 6)', async () => {
+    > 52 |     await mockUnlock({ secondAttacker: true }).verifyFailure(6);
+         |     ^
+      53 |   });
+      54 |   test('compares bytecode and bundled JavaScript', async () => {
+      55 |     const results = [];
+
+      at Verifier.verifyFailure (node_modules/ckb-testtool/dist.commonjs/unittest/core.js:627:26)
+      at Object.<anonymous> (tests/time-hash-lock.mock.test.ts:52:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 10 skipped, 12 total
+Snapshots:   0 total
+Time:        9.794 s
+Ran all test suites with tests matching "recipient substitution|second output".

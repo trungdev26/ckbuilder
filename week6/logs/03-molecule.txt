@@ -1,0 +1,6 @@
+Script fields: codeHash (32 bytes), hashType (1 byte), args (Bytes)
+Header [total size, field offsets]: [ 55, 16, 48, 49 ]
+Args byte count: 2
+Encoded Script: 0x37000000100000003000000031000000111111111111111111111111111111111111111111111111111111111111111101020000001234
+Script and WitnessArgs round trips: PASS
+Out-of-bounds field offset rejected: PASS

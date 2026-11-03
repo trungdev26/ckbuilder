@@ -1,0 +1,12 @@
+[
+  {
+    "format": "bc",
+    "bytes": 29673,
+    "cycles": 13990965
+  },
+  {
+    "format": "js",
+    "bytes": 22961,
+    "cycles": 44046736
+  }
+]

@@ -1,0 +1,79 @@
+
+> week6-script-review@0.1.0 test
+> run-s build test:only
+
+
+> week6-script-review@0.1.0 build
+> node scripts/build-all.js
+
+Building 1 contract(s): time-hash-lock
+
+📦 Building contract: time-hash-lock
+Building time-hash-lock from contracts\time-hash-lock\src\index.ts...
+  📦 Bundling with esbuild with release settings...
+  🔧 Compiling to bytecode...
+  ✅ Contract 'time-hash-lock' built successfully!
+     📄 JavaScript: dist\time-hash-lock.js
+     🔗 Bytecode: dist\time-hash-lock.bc
+✅ Successfully built: time-hash-lock with release version
+
+🎉 All contracts built successfully!
+
+> week6-script-review@0.1.0 test:only
+> jest
+
+  console.log
+    ┌─────────┬────────┬───────┬──────────┐
+    │ (index) │ format │ bytes │ cycles   │
+    ├─────────┼────────┼───────┼──────────┤
+    │ 0       │ 'bc'   │ 29673 │ 13990965 │
+    │ 1       │ 'js'   │ 22961 │ 44046736 │
+    └─────────┴────────┴───────┴──────────┘
+
+      at Object.<anonymous> (tests/time-hash-lock.mock.test.ts:60:13)
+
+  console.log
+
+    ╔════════════════════════════════════════════════════════
+    ║ Script Verification Summary
+    ║ Type: input lock script
+    ║ Index: 0
+    ╠════════════════════════════════════════════════════════
+    ║ STDOUT:
+    ║ Script log: [DEBUG] time-hash-lock v3: passphrase and since accepted
+    ║ Run result: 0
+    ║ All cycles: 13990965(13.3M)
+    ╠════════════════════════════════════════════════════════
+    ║ STDERR:
+    ║
+    ╚════════════════════════════════════════════════════════
+
+      at ScriptVerificationResult.reportSummary (node_modules/ckb-testtool/dist.commonjs/unittest/core.js:106:17)
+
+  console.log
+    Unlock cycles: 13990965
+
+      at Object.<anonymous> (tests/time-hash-lock.mock.test.ts:68:13)
+
+(node:42616) ExperimentalWarning: WASI is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/time-hash-lock.mock.test.ts
+  time-hash-lock mock unlock
+    √ rejects recipient substitution (error 6) (162 ms)
+    √ checks the second output too (error 6) (228 ms)
+    √ compares bytecode and bundled JavaScript (538 ms)
+    √ unlocks with the correct passphrase and since (208 ms)
+    √ accepts a later timestamp (199 ms)
+    √ rejects a wrong passphrase (error 3) (233 ms)
+    √ rejects a timestamp below the minimum (error 4) (213 ms)
+    √ rejects missing since (error 5) (195 ms)
+    √ rejects the wrong since metric (error 5 in v2) (191 ms)
+    √ rejects a missing witness (error 2) (196 ms)
+    √ rejects invalid args (error 1) (190 ms)
+    √ checks every input in the lock group (error 4) (229 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       12 passed, 12 total
+Snapshots:   0 total
+Time:        4.938 s
+Ran all test suites.
