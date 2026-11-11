@@ -1,0 +1,1452 @@
+{
+  "schemaVersion": 2,
+  "journal": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-journal-1794364266377.jsonl",
+  "provenance": {
+    "upstreamCommit": "a534c38f248c0406eeafee94adadb8c2c9072f8a",
+    "hashes": {
+      "service-spike.cjs": "4ba3f40c8f51ec95c82d273c730414ba68d4ca6fc540ec743195b51b6aa1bbf7",
+      "service-adapter.cjs": "522fd8e5301d372e74e8184d7b3542d1535cdbdf2faa91c06f3e42d932548338",
+      "service-verdict.cjs": "9be631a3d7c94946b84c8ddf1fcf9bdd65d51124ab7ddcf672dfc681344d6db4",
+      "upstream-service/cellora/crates/indexer/src/main.rs": "aaf2fa6702e35d7842b88448abb9cf5286d05704a26da40b77b37b4259e7f92f",
+      "upstream-service/cellora/target/debug/cellora-indexer.exe": "76472993249179398e6b8712bc6ad73366d2d9c7be80bdfe223312fce9824731"
+    }
+  },
+  "evidence": [
+    {
+      "time": "2026-11-11T02:31:06.399Z",
+      "event": "provenance",
+      "upstreamCommit": "a534c38f248c0406eeafee94adadb8c2c9072f8a",
+      "hashes": {
+        "service-spike.cjs": "4ba3f40c8f51ec95c82d273c730414ba68d4ca6fc540ec743195b51b6aa1bbf7",
+        "service-adapter.cjs": "522fd8e5301d372e74e8184d7b3542d1535cdbdf2faa91c06f3e42d932548338",
+        "service-verdict.cjs": "9be631a3d7c94946b84c8ddf1fcf9bdd65d51124ab7ddcf672dfc681344d6db4",
+        "upstream-service/cellora/crates/indexer/src/main.rs": "aaf2fa6702e35d7842b88448abb9cf5286d05704a26da40b77b37b4259e7f92f",
+        "upstream-service/cellora/target/debug/cellora-indexer.exe": "76472993249179398e6b8712bc6ad73366d2d9c7be80bdfe223312fce9824731"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:06.440Z",
+      "event": "environment",
+      "ckb": "ckb 0.208.0 (585395c 2026-07-14)",
+      "node": "v22.23.2",
+      "target": "cellora a534c38",
+      "pollMs": 1000,
+      "deadlineMs": 30000
+    },
+    {
+      "time": "2026-11-11T02:31:13.017Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:12.950Z",
+        "servicePid": 35824,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33097",
+          "name": "cellora_mwbi5nna_zb"
+        },
+        "checkpoint": {
+          "height": 7,
+          "hash": "0xaeb326c9c084b8033a44e26570faa9b39efe1faa3d0d82fce51e62a87cdeb90b"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 7
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 7,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|7",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:13.018Z",
+      "event": "committed",
+      "run": 1,
+      "checkpoint": {
+        "height": 7,
+        "hash": "0xaeb326c9c084b8033a44e26570faa9b39efe1faa3d0d82fce51e62a87cdeb90b"
+      },
+      "input": "consumed",
+      "output": "live",
+      "dbOid": "33097",
+      "oldBlockHash": "0xaeb326c9c084b8033a44e26570faa9b39efe1faa3d0d82fce51e62a87cdeb90b",
+      "oldHeight": "0x7"
+    },
+    {
+      "time": "2026-11-11T02:31:15.492Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:15.423Z",
+        "servicePid": 35824,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33097",
+          "name": "cellora_mwbi5nna_zb"
+        },
+        "checkpoint": {
+          "height": 11,
+          "hash": "0xec0d5398c2d5501284e4824758d3b63fa4ddba70373a702b06432148d233e0d3"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "live",
+            "createdHeight": 0,
+            "consumedHeight": null
+          },
+          "output": null
+        },
+        "records": {
+          "input": "live|",
+          "output": null
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:15.493Z",
+      "event": "reorg",
+      "run": 1,
+      "checkpoint": {
+        "height": 11,
+        "hash": "0xec0d5398c2d5501284e4824758d3b63fa4ddba70373a702b06432148d233e0d3"
+      },
+      "input": "live",
+      "output": null,
+      "reorgLogRows": 1,
+      "canonicalAtOldHeight": "0xc91e92fbd849065b75530e492aeda0a86fcc7231fb595f06c3a6a389d2d57f3a"
+    },
+    {
+      "time": "2026-11-11T02:31:17.005Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:16.936Z",
+        "servicePid": 35824,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33097",
+          "name": "cellora_mwbi5nna_zb"
+        },
+        "checkpoint": {
+          "height": 14,
+          "hash": "0xbabc1338ee5aa728ecc456c9b661555825bd48c78cd164de23d95bd15577ad4e"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 14
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 14,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|14",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:17.064Z",
+      "event": "recommit",
+      "run": 1,
+      "blockHash": "0xbabc1338ee5aa728ecc456c9b661555825bd48c78cd164de23d95bd15577ad4e",
+      "outputRows": 1,
+      "checkpoint": {
+        "height": 14,
+        "hash": "0xbabc1338ee5aa728ecc456c9b661555825bd48c78cd164de23d95bd15577ad4e"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:20.585Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:20.517Z",
+        "servicePid": 44684,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33097",
+          "name": "cellora_mwbi5nna_zb"
+        },
+        "checkpoint": {
+          "height": 15,
+          "hash": "0x8ef8dcd82fed39a9cbc3a9650db24a390947ba2b297a664a25d5e337b4dbb9e0"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 14
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 14,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|14",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:20.642Z",
+      "event": "trial_passed",
+      "run": 1,
+      "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+      "stages": {
+        "committed": {
+          "checkpoint": {
+            "height": 7,
+            "hash": "0xaeb326c9c084b8033a44e26570faa9b39efe1faa3d0d82fce51e62a87cdeb90b"
+          },
+          "input": "consumed",
+          "output": "live",
+          "dbOid": "33097",
+          "oldBlockHash": "0xaeb326c9c084b8033a44e26570faa9b39efe1faa3d0d82fce51e62a87cdeb90b",
+          "oldHeight": "0x7"
+        },
+        "reorg": {
+          "checkpoint": {
+            "height": 11,
+            "hash": "0xec0d5398c2d5501284e4824758d3b63fa4ddba70373a702b06432148d233e0d3"
+          },
+          "input": "live",
+          "output": null,
+          "reorgLogRows": 1,
+          "canonicalAtOldHeight": "0xc91e92fbd849065b75530e492aeda0a86fcc7231fb595f06c3a6a389d2d57f3a"
+        },
+        "recommit": {
+          "blockHash": "0xbabc1338ee5aa728ecc456c9b661555825bd48c78cd164de23d95bd15577ad4e",
+          "outputRows": 1,
+          "checkpoint": {
+            "height": 14,
+            "hash": "0xbabc1338ee5aa728ecc456c9b661555825bd48c78cd164de23d95bd15577ad4e"
+          }
+        },
+        "restart": {
+          "pidBefore": 35824,
+          "pidAfter": 44684,
+          "sameDatabase": true,
+          "snapshot": {
+            "observedAt": "2026-11-11T02:31:20.517Z",
+            "servicePid": 44684,
+            "serviceAlive": true,
+            "serviceExitCode": null,
+            "spawnError": null,
+            "databaseIdentity": {
+              "oid": "33097",
+              "name": "cellora_mwbi5nna_zb"
+            },
+            "checkpoint": {
+              "height": 15,
+              "hash": "0x8ef8dcd82fed39a9cbc3a9650db24a390947ba2b297a664a25d5e337b4dbb9e0"
+            },
+            "applicationState": {
+              "reorgLogRows": 1
+            },
+            "cells": {
+              "input": {
+                "state": "consumed",
+                "createdHeight": 0,
+                "consumedHeight": 14
+              },
+              "output": {
+                "state": "live",
+                "createdHeight": 14,
+                "consumedHeight": null
+              }
+            },
+            "records": {
+              "input": "consumed|14",
+              "output": "live|"
+            },
+            "error": null
+          },
+          "newBlock": "0x8ef8dcd82fed39a9cbc3a9650db24a390947ba2b297a664a25d5e337b4dbb9e0",
+          "outputRows": 1
+        }
+      },
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-run-1-1794364266441"
+    },
+    {
+      "time": "2026-11-11T02:31:21.651Z",
+      "event": "node_stopped",
+      "pid": 33016,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:31:21.652Z",
+      "event": "node_stopped",
+      "pid": 31976,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:31:28.252Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:28.184Z",
+        "servicePid": 44724,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33274",
+          "name": "cellora_mwbi5zbs_ny"
+        },
+        "checkpoint": {
+          "height": 7,
+          "hash": "0x965486c2cefa76744745886acf551c69a052aeff803ec6a4f385a76a84652d94"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 7
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 7,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|7",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:28.253Z",
+      "event": "committed",
+      "run": 2,
+      "checkpoint": {
+        "height": 7,
+        "hash": "0x965486c2cefa76744745886acf551c69a052aeff803ec6a4f385a76a84652d94"
+      },
+      "input": "consumed",
+      "output": "live",
+      "dbOid": "33274",
+      "oldBlockHash": "0x965486c2cefa76744745886acf551c69a052aeff803ec6a4f385a76a84652d94",
+      "oldHeight": "0x7"
+    },
+    {
+      "time": "2026-11-11T02:31:30.868Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:30.684Z",
+        "servicePid": 44724,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33274",
+          "name": "cellora_mwbi5zbs_ny"
+        },
+        "checkpoint": {
+          "height": 12,
+          "hash": "0xa14074ea8f346e5e891721ae7748f68298468a73d1f6097cb5f2082943b6e099"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "live",
+            "createdHeight": 0,
+            "consumedHeight": null
+          },
+          "output": null
+        },
+        "records": {
+          "input": "live|",
+          "output": null
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:30.869Z",
+      "event": "reorg",
+      "run": 2,
+      "checkpoint": {
+        "height": 12,
+        "hash": "0xa14074ea8f346e5e891721ae7748f68298468a73d1f6097cb5f2082943b6e099"
+      },
+      "input": "live",
+      "output": null,
+      "reorgLogRows": 1,
+      "canonicalAtOldHeight": "0x9eb03db33d71283dd6a917f6e627ab429ffbba20055cfaea91587767d5201294"
+    },
+    {
+      "time": "2026-11-11T02:31:32.485Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:32.419Z",
+        "servicePid": 44724,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33274",
+          "name": "cellora_mwbi5zbs_ny"
+        },
+        "checkpoint": {
+          "height": 14,
+          "hash": "0xcef5faddb2a940ee902fecef776333ec6252b9271fff49e05a6e4da12cbdeaba"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 14
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 14,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|14",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:32.642Z",
+      "event": "recommit",
+      "run": 2,
+      "blockHash": "0xcef5faddb2a940ee902fecef776333ec6252b9271fff49e05a6e4da12cbdeaba",
+      "outputRows": 1,
+      "checkpoint": {
+        "height": 14,
+        "hash": "0xcef5faddb2a940ee902fecef776333ec6252b9271fff49e05a6e4da12cbdeaba"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:36.047Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:35.971Z",
+        "servicePid": 32072,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33274",
+          "name": "cellora_mwbi5zbs_ny"
+        },
+        "checkpoint": {
+          "height": 15,
+          "hash": "0x151320da22580b18f07cfcc562e7cac1d2d964c87ec8860bb380d5eed5caa65d"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 14
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 14,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|14",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:36.101Z",
+      "event": "trial_passed",
+      "run": 2,
+      "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+      "stages": {
+        "committed": {
+          "checkpoint": {
+            "height": 7,
+            "hash": "0x965486c2cefa76744745886acf551c69a052aeff803ec6a4f385a76a84652d94"
+          },
+          "input": "consumed",
+          "output": "live",
+          "dbOid": "33274",
+          "oldBlockHash": "0x965486c2cefa76744745886acf551c69a052aeff803ec6a4f385a76a84652d94",
+          "oldHeight": "0x7"
+        },
+        "reorg": {
+          "checkpoint": {
+            "height": 12,
+            "hash": "0xa14074ea8f346e5e891721ae7748f68298468a73d1f6097cb5f2082943b6e099"
+          },
+          "input": "live",
+          "output": null,
+          "reorgLogRows": 1,
+          "canonicalAtOldHeight": "0x9eb03db33d71283dd6a917f6e627ab429ffbba20055cfaea91587767d5201294"
+        },
+        "recommit": {
+          "blockHash": "0xcef5faddb2a940ee902fecef776333ec6252b9271fff49e05a6e4da12cbdeaba",
+          "outputRows": 1,
+          "checkpoint": {
+            "height": 14,
+            "hash": "0xcef5faddb2a940ee902fecef776333ec6252b9271fff49e05a6e4da12cbdeaba"
+          }
+        },
+        "restart": {
+          "pidBefore": 44724,
+          "pidAfter": 32072,
+          "sameDatabase": true,
+          "snapshot": {
+            "observedAt": "2026-11-11T02:31:35.971Z",
+            "servicePid": 32072,
+            "serviceAlive": true,
+            "serviceExitCode": null,
+            "spawnError": null,
+            "databaseIdentity": {
+              "oid": "33274",
+              "name": "cellora_mwbi5zbs_ny"
+            },
+            "checkpoint": {
+              "height": 15,
+              "hash": "0x151320da22580b18f07cfcc562e7cac1d2d964c87ec8860bb380d5eed5caa65d"
+            },
+            "applicationState": {
+              "reorgLogRows": 1
+            },
+            "cells": {
+              "input": {
+                "state": "consumed",
+                "createdHeight": 0,
+                "consumedHeight": 14
+              },
+              "output": {
+                "state": "live",
+                "createdHeight": 14,
+                "consumedHeight": null
+              }
+            },
+            "records": {
+              "input": "consumed|14",
+              "output": "live|"
+            },
+            "error": null
+          },
+          "newBlock": "0x151320da22580b18f07cfcc562e7cac1d2d964c87ec8860bb380d5eed5caa65d",
+          "outputRows": 1
+        }
+      },
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-run-2-1794364281653"
+    },
+    {
+      "time": "2026-11-11T02:31:37.118Z",
+      "event": "node_stopped",
+      "pid": 5708,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:31:37.118Z",
+      "event": "node_stopped",
+      "pid": 41968,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:31:43.519Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:43.451Z",
+        "servicePid": 47872,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33452",
+          "name": "cellora_mwbi6bbs_a3"
+        },
+        "checkpoint": {
+          "height": 7,
+          "hash": "0x961e83628becbddf8d94ff59f2c2c5ecb3f1623bb680e9f14931ed9fa4181695"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 7
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 7,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|7",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:43.519Z",
+      "event": "committed",
+      "run": 3,
+      "checkpoint": {
+        "height": 7,
+        "hash": "0x961e83628becbddf8d94ff59f2c2c5ecb3f1623bb680e9f14931ed9fa4181695"
+      },
+      "input": "consumed",
+      "output": "live",
+      "dbOid": "33452",
+      "oldBlockHash": "0x961e83628becbddf8d94ff59f2c2c5ecb3f1623bb680e9f14931ed9fa4181695",
+      "oldHeight": "0x7"
+    },
+    {
+      "time": "2026-11-11T02:31:45.991Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:45.918Z",
+        "servicePid": 47872,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33452",
+          "name": "cellora_mwbi6bbs_a3"
+        },
+        "checkpoint": {
+          "height": 11,
+          "hash": "0xedcc1bbb3103c1dfb8fb39f8e85f9a37bd4050eb335b7c8dfe8016eb2876180a"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "live",
+            "createdHeight": 0,
+            "consumedHeight": null
+          },
+          "output": null
+        },
+        "records": {
+          "input": "live|",
+          "output": null
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:45.992Z",
+      "event": "reorg",
+      "run": 3,
+      "checkpoint": {
+        "height": 11,
+        "hash": "0xedcc1bbb3103c1dfb8fb39f8e85f9a37bd4050eb335b7c8dfe8016eb2876180a"
+      },
+      "input": "live",
+      "output": null,
+      "reorgLogRows": 1,
+      "canonicalAtOldHeight": "0x089f1ee7d5c70071da222b35f8a9739913aaf6b726810f1ac6d6cafa1c2ba116"
+    },
+    {
+      "time": "2026-11-11T02:31:46.552Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:46.379Z",
+        "servicePid": 47872,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33452",
+          "name": "cellora_mwbi6bbs_a3"
+        },
+        "checkpoint": {
+          "height": 14,
+          "hash": "0x541f27c1c790679a6b53645ec8f0a1f3d17af7555ad05f17db748bb55138f27a"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 14
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 14,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|14",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:46.611Z",
+      "event": "recommit",
+      "run": 3,
+      "blockHash": "0x541f27c1c790679a6b53645ec8f0a1f3d17af7555ad05f17db748bb55138f27a",
+      "outputRows": 1,
+      "checkpoint": {
+        "height": 14,
+        "hash": "0x541f27c1c790679a6b53645ec8f0a1f3d17af7555ad05f17db748bb55138f27a"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:50.235Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:31:50.151Z",
+        "servicePid": 9500,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33452",
+          "name": "cellora_mwbi6bbs_a3"
+        },
+        "checkpoint": {
+          "height": 15,
+          "hash": "0x097bef45f17706219a462e0e4af4cf977b5326bd126572f7dea3e18f7c057141"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": {
+            "state": "consumed",
+            "createdHeight": 0,
+            "consumedHeight": 14
+          },
+          "output": {
+            "state": "live",
+            "createdHeight": 14,
+            "consumedHeight": null
+          }
+        },
+        "records": {
+          "input": "consumed|14",
+          "output": "live|"
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:31:50.406Z",
+      "event": "trial_passed",
+      "run": 3,
+      "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+      "stages": {
+        "committed": {
+          "checkpoint": {
+            "height": 7,
+            "hash": "0x961e83628becbddf8d94ff59f2c2c5ecb3f1623bb680e9f14931ed9fa4181695"
+          },
+          "input": "consumed",
+          "output": "live",
+          "dbOid": "33452",
+          "oldBlockHash": "0x961e83628becbddf8d94ff59f2c2c5ecb3f1623bb680e9f14931ed9fa4181695",
+          "oldHeight": "0x7"
+        },
+        "reorg": {
+          "checkpoint": {
+            "height": 11,
+            "hash": "0xedcc1bbb3103c1dfb8fb39f8e85f9a37bd4050eb335b7c8dfe8016eb2876180a"
+          },
+          "input": "live",
+          "output": null,
+          "reorgLogRows": 1,
+          "canonicalAtOldHeight": "0x089f1ee7d5c70071da222b35f8a9739913aaf6b726810f1ac6d6cafa1c2ba116"
+        },
+        "recommit": {
+          "blockHash": "0x541f27c1c790679a6b53645ec8f0a1f3d17af7555ad05f17db748bb55138f27a",
+          "outputRows": 1,
+          "checkpoint": {
+            "height": 14,
+            "hash": "0x541f27c1c790679a6b53645ec8f0a1f3d17af7555ad05f17db748bb55138f27a"
+          }
+        },
+        "restart": {
+          "pidBefore": 47872,
+          "pidAfter": 9500,
+          "sameDatabase": true,
+          "snapshot": {
+            "observedAt": "2026-11-11T02:31:50.151Z",
+            "servicePid": 9500,
+            "serviceAlive": true,
+            "serviceExitCode": null,
+            "spawnError": null,
+            "databaseIdentity": {
+              "oid": "33452",
+              "name": "cellora_mwbi6bbs_a3"
+            },
+            "checkpoint": {
+              "height": 15,
+              "hash": "0x097bef45f17706219a462e0e4af4cf977b5326bd126572f7dea3e18f7c057141"
+            },
+            "applicationState": {
+              "reorgLogRows": 1
+            },
+            "cells": {
+              "input": {
+                "state": "consumed",
+                "createdHeight": 0,
+                "consumedHeight": 14
+              },
+              "output": {
+                "state": "live",
+                "createdHeight": 14,
+                "consumedHeight": null
+              }
+            },
+            "records": {
+              "input": "consumed|14",
+              "output": "live|"
+            },
+            "error": null
+          },
+          "newBlock": "0x097bef45f17706219a462e0e4af4cf977b5326bd126572f7dea3e18f7c057141",
+          "outputRows": 1
+        }
+      },
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-run-3-1794364297118"
+    },
+    {
+      "time": "2026-11-11T02:31:51.418Z",
+      "event": "node_stopped",
+      "pid": 42604,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:31:51.418Z",
+      "event": "node_stopped",
+      "pid": 41524,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:31:56.817Z",
+      "event": "node_stopped",
+      "pid": 32584,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:32:03.185Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:32:03.118Z",
+        "servicePid": 35172,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33630",
+          "name": "cellora_mwbi6l0d_6g"
+        },
+        "checkpoint": {
+          "height": 4,
+          "hash": "0xefc6c7f1d98415306e1cd396f35c0f70070c4bbf764cbcd55eb573239b714e48"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": null,
+          "output": null
+        },
+        "records": {
+          "input": null,
+          "output": null
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:32:03.186Z",
+      "event": "control_rpc_recovery",
+      "observed": {
+        "verdict": "ERROR",
+        "reason": "Canonical RPC observation unavailable"
+      },
+      "before": {
+        "observedAt": "2026-11-11T02:31:55.755Z",
+        "servicePid": 35172,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33630",
+          "name": "cellora_mwbi6l0d_6g"
+        },
+        "checkpoint": {
+          "height": 3,
+          "hash": "0x22a86ef2045b9662cac28f80a80d5f1cb0368b487e7a320d95708b237b6e2bcc"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": null,
+          "output": null
+        },
+        "records": {
+          "input": null,
+          "output": null
+        },
+        "error": null
+      },
+      "after": {
+        "observedAt": "2026-11-11T02:32:00.818Z",
+        "servicePid": 35172,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33630",
+          "name": "cellora_mwbi6l0d_6g"
+        },
+        "checkpoint": {
+          "height": 3,
+          "hash": "0x22a86ef2045b9662cac28f80a80d5f1cb0368b487e7a320d95708b237b6e2bcc"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": null,
+          "output": null
+        },
+        "records": {
+          "input": null,
+          "output": null
+        },
+        "error": null
+      },
+      "recovered": {
+        "observedAt": "2026-11-11T02:32:03.118Z",
+        "servicePid": 35172,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33630",
+          "name": "cellora_mwbi6l0d_6g"
+        },
+        "checkpoint": {
+          "height": 4,
+          "hash": "0xefc6c7f1d98415306e1cd396f35c0f70070c4bbf764cbcd55eb573239b714e48"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": null,
+          "output": null
+        },
+        "records": {
+          "input": null,
+          "output": null
+        },
+        "error": null
+      }
+    },
+    {
+      "time": "2026-11-11T02:32:03.186Z",
+      "event": "control_rpc_down",
+      "stalled": true,
+      "checkpoint": {
+        "height": 3,
+        "hash": "0x22a86ef2045b9662cac28f80a80d5f1cb0368b487e7a320d95708b237b6e2bcc"
+      },
+      "verdict": "PASS",
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-control-rpc-1794364311419"
+    },
+    {
+      "time": "2026-11-11T02:32:04.201Z",
+      "event": "node_stopped",
+      "pid": 39528,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:32:13.935Z",
+      "event": "control_stopped_observation",
+      "observed": {
+        "verdict": "INCONCLUSIVE",
+        "reason": "Indexer is not running"
+      },
+      "stale": {
+        "observedAt": "2026-11-11T02:32:10.341Z",
+        "servicePid": 38476,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33808",
+          "name": "cellora_mwbi6w21_ma"
+        },
+        "checkpoint": {
+          "height": 7,
+          "hash": "0x12e67a606386c93780fbff4324777befad9be518a9197680cdc46a6850e1c5e6"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": null,
+          "output": null
+        },
+        "records": {
+          "input": null,
+          "output": null
+        },
+        "error": null
+      },
+      "duringStop": {
+        "observedAt": "2026-11-11T02:32:13.751Z",
+        "servicePid": 38476,
+        "serviceAlive": false,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33808",
+          "name": "cellora_mwbi6w21_ma"
+        },
+        "checkpoint": {
+          "height": 7,
+          "hash": "0x12e67a606386c93780fbff4324777befad9be518a9197680cdc46a6850e1c5e6"
+        },
+        "applicationState": {
+          "reorgLogRows": 0
+        },
+        "cells": {
+          "input": null,
+          "output": null
+        },
+        "records": {
+          "input": null,
+          "output": null
+        },
+        "error": null
+      }
+    },
+    {
+      "time": "2026-11-11T02:32:16.169Z",
+      "event": "snapshot",
+      "snapshot": {
+        "observedAt": "2026-11-11T02:32:16.099Z",
+        "servicePid": 35200,
+        "serviceAlive": true,
+        "serviceExitCode": null,
+        "spawnError": null,
+        "databaseIdentity": {
+          "oid": "33808",
+          "name": "cellora_mwbi6w21_ma"
+        },
+        "checkpoint": {
+          "height": 12,
+          "hash": "0xf5710cc63540e21807ea6c9d0187af38f63b965ecae4ddf20fd6b959b4b99bea"
+        },
+        "applicationState": {
+          "reorgLogRows": 1
+        },
+        "cells": {
+          "input": null,
+          "output": null
+        },
+        "records": {
+          "input": null,
+          "output": null
+        },
+        "error": null
+      },
+      "outcome": {
+        "verdict": "PASS",
+        "reason": "Canonical state and application assertion agree"
+      }
+    },
+    {
+      "time": "2026-11-11T02:32:16.169Z",
+      "event": "control_service_stopped",
+      "verdict": "PASS",
+      "frozen": true,
+      "recovered": true,
+      "reorgLogRows": 1,
+      "orphanHash": "0x12e67a606386c93780fbff4324777befad9be518a9197680cdc46a6850e1c5e6",
+      "canonicalHash": "0xf543d6f8949c65184a65fc42d111c422dffa63d142a6bac69974a698f7c3e522",
+      "sameDatabase": true,
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-control-stopped-1794364324202"
+    },
+    {
+      "time": "2026-11-11T02:32:17.184Z",
+      "event": "node_stopped",
+      "pid": 28880,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    },
+    {
+      "time": "2026-11-11T02:32:17.185Z",
+      "event": "node_stopped",
+      "pid": 18156,
+      "exitCode": null,
+      "signal": "SIGTERM"
+    }
+  ],
+  "results": [
+    {
+      "run": 1,
+      "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+      "stages": {
+        "committed": {
+          "checkpoint": {
+            "height": 7,
+            "hash": "0xaeb326c9c084b8033a44e26570faa9b39efe1faa3d0d82fce51e62a87cdeb90b"
+          },
+          "input": "consumed",
+          "output": "live",
+          "dbOid": "33097",
+          "oldBlockHash": "0xaeb326c9c084b8033a44e26570faa9b39efe1faa3d0d82fce51e62a87cdeb90b",
+          "oldHeight": "0x7"
+        },
+        "reorg": {
+          "checkpoint": {
+            "height": 11,
+            "hash": "0xec0d5398c2d5501284e4824758d3b63fa4ddba70373a702b06432148d233e0d3"
+          },
+          "input": "live",
+          "output": null,
+          "reorgLogRows": 1,
+          "canonicalAtOldHeight": "0xc91e92fbd849065b75530e492aeda0a86fcc7231fb595f06c3a6a389d2d57f3a"
+        },
+        "recommit": {
+          "blockHash": "0xbabc1338ee5aa728ecc456c9b661555825bd48c78cd164de23d95bd15577ad4e",
+          "outputRows": 1,
+          "checkpoint": {
+            "height": 14,
+            "hash": "0xbabc1338ee5aa728ecc456c9b661555825bd48c78cd164de23d95bd15577ad4e"
+          }
+        },
+        "restart": {
+          "pidBefore": 35824,
+          "pidAfter": 44684,
+          "sameDatabase": true,
+          "snapshot": {
+            "observedAt": "2026-11-11T02:31:20.517Z",
+            "servicePid": 44684,
+            "serviceAlive": true,
+            "serviceExitCode": null,
+            "spawnError": null,
+            "databaseIdentity": {
+              "oid": "33097",
+              "name": "cellora_mwbi5nna_zb"
+            },
+            "checkpoint": {
+              "height": 15,
+              "hash": "0x8ef8dcd82fed39a9cbc3a9650db24a390947ba2b297a664a25d5e337b4dbb9e0"
+            },
+            "applicationState": {
+              "reorgLogRows": 1
+            },
+            "cells": {
+              "input": {
+                "state": "consumed",
+                "createdHeight": 0,
+                "consumedHeight": 14
+              },
+              "output": {
+                "state": "live",
+                "createdHeight": 14,
+                "consumedHeight": null
+              }
+            },
+            "records": {
+              "input": "consumed|14",
+              "output": "live|"
+            },
+            "error": null
+          },
+          "newBlock": "0x8ef8dcd82fed39a9cbc3a9650db24a390947ba2b297a664a25d5e337b4dbb9e0",
+          "outputRows": 1
+        }
+      },
+      "verdict": "PASS",
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-run-1-1794364266441"
+    },
+    {
+      "run": 2,
+      "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+      "stages": {
+        "committed": {
+          "checkpoint": {
+            "height": 7,
+            "hash": "0x965486c2cefa76744745886acf551c69a052aeff803ec6a4f385a76a84652d94"
+          },
+          "input": "consumed",
+          "output": "live",
+          "dbOid": "33274",
+          "oldBlockHash": "0x965486c2cefa76744745886acf551c69a052aeff803ec6a4f385a76a84652d94",
+          "oldHeight": "0x7"
+        },
+        "reorg": {
+          "checkpoint": {
+            "height": 12,
+            "hash": "0xa14074ea8f346e5e891721ae7748f68298468a73d1f6097cb5f2082943b6e099"
+          },
+          "input": "live",
+          "output": null,
+          "reorgLogRows": 1,
+          "canonicalAtOldHeight": "0x9eb03db33d71283dd6a917f6e627ab429ffbba20055cfaea91587767d5201294"
+        },
+        "recommit": {
+          "blockHash": "0xcef5faddb2a940ee902fecef776333ec6252b9271fff49e05a6e4da12cbdeaba",
+          "outputRows": 1,
+          "checkpoint": {
+            "height": 14,
+            "hash": "0xcef5faddb2a940ee902fecef776333ec6252b9271fff49e05a6e4da12cbdeaba"
+          }
+        },
+        "restart": {
+          "pidBefore": 44724,
+          "pidAfter": 32072,
+          "sameDatabase": true,
+          "snapshot": {
+            "observedAt": "2026-11-11T02:31:35.971Z",
+            "servicePid": 32072,
+            "serviceAlive": true,
+            "serviceExitCode": null,
+            "spawnError": null,
+            "databaseIdentity": {
+              "oid": "33274",
+              "name": "cellora_mwbi5zbs_ny"
+            },
+            "checkpoint": {
+              "height": 15,
+              "hash": "0x151320da22580b18f07cfcc562e7cac1d2d964c87ec8860bb380d5eed5caa65d"
+            },
+            "applicationState": {
+              "reorgLogRows": 1
+            },
+            "cells": {
+              "input": {
+                "state": "consumed",
+                "createdHeight": 0,
+                "consumedHeight": 14
+              },
+              "output": {
+                "state": "live",
+                "createdHeight": 14,
+                "consumedHeight": null
+              }
+            },
+            "records": {
+              "input": "consumed|14",
+              "output": "live|"
+            },
+            "error": null
+          },
+          "newBlock": "0x151320da22580b18f07cfcc562e7cac1d2d964c87ec8860bb380d5eed5caa65d",
+          "outputRows": 1
+        }
+      },
+      "verdict": "PASS",
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-run-2-1794364281653"
+    },
+    {
+      "run": 3,
+      "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+      "stages": {
+        "committed": {
+          "checkpoint": {
+            "height": 7,
+            "hash": "0x961e83628becbddf8d94ff59f2c2c5ecb3f1623bb680e9f14931ed9fa4181695"
+          },
+          "input": "consumed",
+          "output": "live",
+          "dbOid": "33452",
+          "oldBlockHash": "0x961e83628becbddf8d94ff59f2c2c5ecb3f1623bb680e9f14931ed9fa4181695",
+          "oldHeight": "0x7"
+        },
+        "reorg": {
+          "checkpoint": {
+            "height": 11,
+            "hash": "0xedcc1bbb3103c1dfb8fb39f8e85f9a37bd4050eb335b7c8dfe8016eb2876180a"
+          },
+          "input": "live",
+          "output": null,
+          "reorgLogRows": 1,
+          "canonicalAtOldHeight": "0x089f1ee7d5c70071da222b35f8a9739913aaf6b726810f1ac6d6cafa1c2ba116"
+        },
+        "recommit": {
+          "blockHash": "0x541f27c1c790679a6b53645ec8f0a1f3d17af7555ad05f17db748bb55138f27a",
+          "outputRows": 1,
+          "checkpoint": {
+            "height": 14,
+            "hash": "0x541f27c1c790679a6b53645ec8f0a1f3d17af7555ad05f17db748bb55138f27a"
+          }
+        },
+        "restart": {
+          "pidBefore": 47872,
+          "pidAfter": 9500,
+          "sameDatabase": true,
+          "snapshot": {
+            "observedAt": "2026-11-11T02:31:50.151Z",
+            "servicePid": 9500,
+            "serviceAlive": true,
+            "serviceExitCode": null,
+            "spawnError": null,
+            "databaseIdentity": {
+              "oid": "33452",
+              "name": "cellora_mwbi6bbs_a3"
+            },
+            "checkpoint": {
+              "height": 15,
+              "hash": "0x097bef45f17706219a462e0e4af4cf977b5326bd126572f7dea3e18f7c057141"
+            },
+            "applicationState": {
+              "reorgLogRows": 1
+            },
+            "cells": {
+              "input": {
+                "state": "consumed",
+                "createdHeight": 0,
+                "consumedHeight": 14
+              },
+              "output": {
+                "state": "live",
+                "createdHeight": 14,
+                "consumedHeight": null
+              }
+            },
+            "records": {
+              "input": "consumed|14",
+              "output": "live|"
+            },
+            "error": null
+          },
+          "newBlock": "0x097bef45f17706219a462e0e4af4cf977b5326bd126572f7dea3e18f7c057141",
+          "outputRows": 1
+        }
+      },
+      "verdict": "PASS",
+      "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\service-run-3-1794364297118"
+    }
+  ],
+  "controls": {
+    "rpcDown": "PASS",
+    "serviceStopped": "PASS"
+  }
+}

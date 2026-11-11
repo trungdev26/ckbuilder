@@ -1,0 +1,275 @@
+[
+  {
+    "time": "2026-11-10T18:54:07.892Z",
+    "event": "environment",
+    "ckb": "ckb 0.208.0 (585395c 2026-07-14)",
+    "node": "v22.23.2",
+    "ccc": "1.12.2",
+    "pow": "Dummy",
+    "validation": "generate_block (verified)",
+    "ports": [
+      19114,
+      19214
+    ]
+  },
+  {
+    "time": "2026-11-10T18:54:12.658Z",
+    "event": "partition",
+    "run": 1,
+    "commonTip": "0x8d76cfa1375526c8b4e5043aa5ac9cd365534b56891ea70a320aa24486c76ecf",
+    "height": "0xd"
+  },
+  {
+    "time": "2026-11-10T18:54:13.455Z",
+    "event": "payment_committed",
+    "run": 1,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "before": {
+      "tip": {
+        "number": "0x11",
+        "hash": "0xccf7dae1e70d89a9ff8df2e7b4b8baa2d1d6446b135c2a12a714b839cd7d2d1e"
+      },
+      "tx": {
+        "block_hash": "0xccf7dae1e70d89a9ff8df2e7b4b8baa2d1d6446b135c2a12a714b839cd7d2d1e",
+        "block_number": "0x11",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    }
+  },
+  {
+    "time": "2026-11-10T18:54:16.202Z",
+    "event": "reorg_observed",
+    "run": 1,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "after": {
+      "tip": {
+        "number": "0x15",
+        "hash": "0x5aaced455904866f370cd59bc5af035c7065004947d2cfdcb1d3b4e7625b887e"
+      },
+      "tx": {
+        "block_hash": null,
+        "block_number": null,
+        "reason": null,
+        "status": "pending",
+        "tx_index": null
+      },
+      "input": "live",
+      "output": "unknown"
+    },
+    "oldBlock": "0xccf7dae1e70d89a9ff8df2e7b4b8baa2d1d6446b135c2a12a714b839cd7d2d1e",
+    "canonicalAtOldHeight": "0x47aed6fc7b2423981e186ac62f6dc371215a362821e73ea7b34c9182331635e1",
+    "applicationBefore": {
+      "buggy": "PAID",
+      "correct": "PAID"
+    },
+    "applicationAfter": {
+      "buggy": "PAID",
+      "correct": "UNCONFIRMED"
+    },
+    "assertions": {
+      "buggyWatcher": "FAIL (expected negative control)",
+      "rollbackWatcher": "PASS"
+    }
+  },
+  {
+    "time": "2026-11-10T18:54:16.849Z",
+    "event": "trial_passed",
+    "run": 1,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "recommitted": {
+      "tip": {
+        "number": "0x18",
+        "hash": "0xbb0839371eb3353390f726ea548c93196d57b96d1ec4c05eb0c0fb33e7f1b629"
+      },
+      "tx": {
+        "block_hash": "0xbb0839371eb3353390f726ea548c93196d57b96d1ec4c05eb0c0fb33e7f1b629",
+        "block_number": "0x18",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    },
+    "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\run-1-1794336847895"
+  },
+  {
+    "time": "2026-11-10T18:54:21.867Z",
+    "event": "partition",
+    "run": 2,
+    "commonTip": "0xd0f9cb01cf285f95453058fc95c82f0afc3f1e533ed59cacb412287345928cbc",
+    "height": "0xd"
+  },
+  {
+    "time": "2026-11-10T18:54:22.619Z",
+    "event": "payment_committed",
+    "run": 2,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "before": {
+      "tip": {
+        "number": "0x11",
+        "hash": "0x0281c866f75d4d229f672b6f4d0b72c589566765d5e45ce392879ebec1d14d40"
+      },
+      "tx": {
+        "block_hash": "0x0281c866f75d4d229f672b6f4d0b72c589566765d5e45ce392879ebec1d14d40",
+        "block_number": "0x11",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    }
+  },
+  {
+    "time": "2026-11-10T18:54:24.439Z",
+    "event": "reorg_observed",
+    "run": 2,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "after": {
+      "tip": {
+        "number": "0x15",
+        "hash": "0x357e6f0a74c97814802d03c7661d51cbee90a47a8d1a71828087f387bbb840a7"
+      },
+      "tx": {
+        "block_hash": null,
+        "block_number": null,
+        "reason": null,
+        "status": "pending",
+        "tx_index": null
+      },
+      "input": "live",
+      "output": "unknown"
+    },
+    "oldBlock": "0x0281c866f75d4d229f672b6f4d0b72c589566765d5e45ce392879ebec1d14d40",
+    "canonicalAtOldHeight": "0xc926d3c06db98c2e6833c98c5722ff4f969de52776c1233f6cd8dbe9d7325c12",
+    "applicationBefore": {
+      "buggy": "PAID",
+      "correct": "PAID"
+    },
+    "applicationAfter": {
+      "buggy": "PAID",
+      "correct": "UNCONFIRMED"
+    },
+    "assertions": {
+      "buggyWatcher": "FAIL (expected negative control)",
+      "rollbackWatcher": "PASS"
+    }
+  },
+  {
+    "time": "2026-11-10T18:54:25.022Z",
+    "event": "trial_passed",
+    "run": 2,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "recommitted": {
+      "tip": {
+        "number": "0x18",
+        "hash": "0xe513481827b5926694b0d71dae22e00269d8121a7f7293ea8ceae81b24a6eba4"
+      },
+      "tx": {
+        "block_hash": "0xe513481827b5926694b0d71dae22e00269d8121a7f7293ea8ceae81b24a6eba4",
+        "block_number": "0x18",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    },
+    "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\run-2-1794336857051"
+  },
+  {
+    "time": "2026-11-10T18:54:29.925Z",
+    "event": "partition",
+    "run": 3,
+    "commonTip": "0xfea0b2b628fb5c3758157952d070d12b0237093bdbc8066bf615ae30212e683e",
+    "height": "0xd"
+  },
+  {
+    "time": "2026-11-10T18:54:30.740Z",
+    "event": "payment_committed",
+    "run": 3,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "before": {
+      "tip": {
+        "number": "0x11",
+        "hash": "0xbc368182e255e16eb375ec70b1939a6b8c04a9393d99daaa7b8f8c72c573336c"
+      },
+      "tx": {
+        "block_hash": "0xbc368182e255e16eb375ec70b1939a6b8c04a9393d99daaa7b8f8c72c573336c",
+        "block_number": "0x11",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    }
+  },
+  {
+    "time": "2026-11-10T18:54:33.495Z",
+    "event": "reorg_observed",
+    "run": 3,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "after": {
+      "tip": {
+        "number": "0x15",
+        "hash": "0x462e86a9979be330ce386a6bedda5fe2ff7b8551aa13f13a595228c2886734c7"
+      },
+      "tx": {
+        "block_hash": null,
+        "block_number": null,
+        "reason": null,
+        "status": "pending",
+        "tx_index": null
+      },
+      "input": "live",
+      "output": "unknown"
+    },
+    "oldBlock": "0xbc368182e255e16eb375ec70b1939a6b8c04a9393d99daaa7b8f8c72c573336c",
+    "canonicalAtOldHeight": "0x2696c48b561569ce738259743c079b8ba929e6d6fd0dfe65a285245915431094",
+    "applicationBefore": {
+      "buggy": "PAID",
+      "correct": "PAID"
+    },
+    "applicationAfter": {
+      "buggy": "PAID",
+      "correct": "UNCONFIRMED"
+    },
+    "assertions": {
+      "buggyWatcher": "FAIL (expected negative control)",
+      "rollbackWatcher": "PASS"
+    }
+  },
+  {
+    "time": "2026-11-10T18:54:33.956Z",
+    "event": "trial_passed",
+    "run": 3,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "recommitted": {
+      "tip": {
+        "number": "0x18",
+        "hash": "0x8a92b2d4407e0f6e72630cbacc8b6b0dd707f34de410f0ad31430349bd664a1e"
+      },
+      "tx": {
+        "block_hash": "0x8a92b2d4407e0f6e72630cbacc8b6b0dd707f34de410f0ad31430349bd664a1e",
+        "block_number": "0x18",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    },
+    "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\run-3-1794336865224"
+  },
+  {
+    "time": "2026-11-10T18:54:34.170Z",
+    "event": "spike_passed",
+    "trials": 3
+  }
+]

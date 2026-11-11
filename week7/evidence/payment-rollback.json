@@ -1,0 +1,1259 @@
+[
+  {
+    "time": "2026-11-10T19:06:50.222Z",
+    "event": "environment",
+    "ckb": "ckb 0.208.0 (585395c 2026-07-14)",
+    "node": "v22.23.2",
+    "ccc": "1.12.2",
+    "pow": "Dummy",
+    "validation": "generate_block (verified)",
+    "ports": [
+      19114,
+      19214
+    ]
+  },
+  {
+    "time": "2026-11-10T19:06:54.904Z",
+    "event": "partition",
+    "run": 1,
+    "commonTip": "0xac37fe1ae9964be60e57a2de7803809d67de2809913d0e52e744e5c334e09cdc",
+    "height": "0xd"
+  },
+  {
+    "time": "2026-11-10T19:06:55.974Z",
+    "event": "payment_committed",
+    "run": 1,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "before": {
+      "tip": {
+        "number": "0x10",
+        "hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337"
+      },
+      "tx": {
+        "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+        "block_number": "0x10",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    }
+  },
+  {
+    "time": "2026-11-10T19:06:55.978Z",
+    "event": "external_apps_paid",
+    "run": 1,
+    "pids": [
+      32096,
+      39324
+    ],
+    "persistedBefore": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+          "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+          "checked_at": "2026-11-10T19:06:55.941Z",
+          "last_error": null,
+          "observations": 3
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.941Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+          "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+          "checked_at": "2026-11-10T19:06:55.936Z",
+          "last_error": null,
+          "observations": 3
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.936Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:06:58.528Z",
+    "event": "external_rollback",
+    "run": 1,
+    "persistedAfter": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+          "checked_at": "2026-11-10T19:06:58.438Z",
+          "last_error": null,
+          "observations": 18
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.941Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+          "checked_at": "2026-11-10T19:06:58.416Z",
+          "last_error": null,
+          "observations": 17
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.936Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+            "observed_at": "2026-11-10T19:06:58.416Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:06:58.995Z",
+    "event": "same_database_repaired",
+    "run": 1,
+    "oldPid": 32096,
+    "newPid": 34336,
+    "database": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\external-run-1-1794337610224\\buggy.sqlite",
+    "repaired": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+          "checked_at": "2026-11-10T19:06:58.891Z",
+          "last_error": null,
+          "observations": 19
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.941Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+            "observed_at": "2026-11-10T19:06:58.891Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+          "checked_at": "2026-11-10T19:06:58.973Z",
+          "last_error": null,
+          "observations": 21
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.936Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+            "observed_at": "2026-11-10T19:06:58.416Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:06:58.996Z",
+    "event": "reorg_observed",
+    "run": 1,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "after": {
+      "tip": {
+        "number": "0x14",
+        "hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca"
+      },
+      "tx": {
+        "block_hash": null,
+        "block_number": null,
+        "reason": null,
+        "status": "pending",
+        "tx_index": null
+      },
+      "input": "live",
+      "output": "unknown"
+    },
+    "oldBlock": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+    "canonicalAtOldHeight": "0x914dc9c3ec765b1cbc88cbba46d41eba94cfb06b4ac31dd45deae7afe4d96b79",
+    "applicationBefore": {
+      "buggy": "PAID",
+      "correct": "PAID"
+    },
+    "applicationAfter": {
+      "buggy": "PAID",
+      "correct": "UNCONFIRMED"
+    },
+    "assertions": {
+      "buggyWatcher": "FAIL (expected negative control)",
+      "rollbackWatcher": "PASS"
+    }
+  },
+  {
+    "time": "2026-11-10T19:06:59.628Z",
+    "event": "external_recommitted",
+    "run": 1,
+    "persistedRecommitted": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+          "tip_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+          "checked_at": "2026-11-10T19:06:59.472Z",
+          "last_error": null,
+          "observations": 23
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.941Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+            "observed_at": "2026-11-10T19:06:58.891Z"
+          },
+          {
+            "sequence": 3,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+            "tip_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+            "observed_at": "2026-11-10T19:06:59.472Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+          "tip_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+          "checked_at": "2026-11-10T19:06:59.453Z",
+          "last_error": null,
+          "observations": 24
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "tip_hash": "0xda2c7814f040be474a18e4958a844e23d59248ccc1d2d4d02fab807479274337",
+            "observed_at": "2026-11-10T19:06:55.936Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0xb9c322bd98ee343f156823a5bc1811268ef1ac2c587f06ee47d4e644ba9c4bca",
+            "observed_at": "2026-11-10T19:06:58.416Z"
+          },
+          {
+            "sequence": 3,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+            "tip_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+            "observed_at": "2026-11-10T19:06:59.453Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:06:59.629Z",
+    "event": "trial_passed",
+    "run": 1,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "recommitted": {
+      "tip": {
+        "number": "0x17",
+        "hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557"
+      },
+      "tx": {
+        "block_hash": "0xac1b41493e6cab8a7e0ca4d9f677ce67c13ae7a8a9a71f5a6a29eff15ced1557",
+        "block_number": "0x17",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    },
+    "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\external-run-1-1794337610224"
+  },
+  {
+    "time": "2026-11-10T19:07:04.374Z",
+    "event": "partition",
+    "run": 2,
+    "commonTip": "0x0fe9f0133e5b0ab9cb02b20744aa6f5a78fd6cc63a744792c598396571799395",
+    "height": "0xd"
+  },
+  {
+    "time": "2026-11-10T19:07:05.458Z",
+    "event": "payment_committed",
+    "run": 2,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "before": {
+      "tip": {
+        "number": "0x11",
+        "hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f"
+      },
+      "tx": {
+        "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+        "block_number": "0x11",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    }
+  },
+  {
+    "time": "2026-11-10T19:07:05.675Z",
+    "event": "external_apps_paid",
+    "run": 2,
+    "pids": [
+      5116,
+      4352
+    ],
+    "persistedBefore": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+          "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+          "checked_at": "2026-11-10T19:07:05.555Z",
+          "last_error": null,
+          "observations": 5
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.379Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+          "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+          "checked_at": "2026-11-10T19:07:05.626Z",
+          "last_error": null,
+          "observations": 5
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.472Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:08.190Z",
+    "event": "external_rollback",
+    "run": 2,
+    "persistedAfter": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+          "checked_at": "2026-11-10T19:07:08.085Z",
+          "last_error": null,
+          "observations": 21
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.379Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+          "checked_at": "2026-11-10T19:07:08.085Z",
+          "last_error": null,
+          "observations": 21
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.472Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+            "observed_at": "2026-11-10T19:07:08.085Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:08.642Z",
+    "event": "same_database_repaired",
+    "run": 2,
+    "oldPid": 5116,
+    "newPid": 48236,
+    "database": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\external-run-2-1794337619839\\buggy.sqlite",
+    "repaired": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+          "checked_at": "2026-11-10T19:07:08.524Z",
+          "last_error": null,
+          "observations": 22
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.379Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+            "observed_at": "2026-11-10T19:07:08.524Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+          "checked_at": "2026-11-10T19:07:08.524Z",
+          "last_error": null,
+          "observations": 24
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.472Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+            "observed_at": "2026-11-10T19:07:08.085Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:08.642Z",
+    "event": "reorg_observed",
+    "run": 2,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "after": {
+      "tip": {
+        "number": "0x15",
+        "hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151"
+      },
+      "tx": {
+        "block_hash": null,
+        "block_number": null,
+        "reason": null,
+        "status": "pending",
+        "tx_index": null
+      },
+      "input": "live",
+      "output": "unknown"
+    },
+    "oldBlock": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+    "canonicalAtOldHeight": "0x96779285f7aa7acb963d5352e8ad6469036c61c059ca98582581644ab873d9d4",
+    "applicationBefore": {
+      "buggy": "PAID",
+      "correct": "PAID"
+    },
+    "applicationAfter": {
+      "buggy": "PAID",
+      "correct": "UNCONFIRMED"
+    },
+    "assertions": {
+      "buggyWatcher": "FAIL (expected negative control)",
+      "rollbackWatcher": "PASS"
+    }
+  },
+  {
+    "time": "2026-11-10T19:07:09.230Z",
+    "event": "external_recommitted",
+    "run": 2,
+    "persistedRecommitted": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+          "tip_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+          "checked_at": "2026-11-10T19:07:09.126Z",
+          "last_error": null,
+          "observations": 26
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.379Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+            "observed_at": "2026-11-10T19:07:08.524Z"
+          },
+          {
+            "sequence": 3,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+            "tip_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+            "observed_at": "2026-11-10T19:07:09.126Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+          "tip_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+          "checked_at": "2026-11-10T19:07:09.107Z",
+          "last_error": null,
+          "observations": 27
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "tip_hash": "0xa03cc14c88ae18534457e6679006b0dd2838d73c77ce3886db475c61502eb95f",
+            "observed_at": "2026-11-10T19:07:05.472Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x6ad4045f85a12faee0ce6343a24d0ca60e0da8d23a9cb9654cb29825facdd151",
+            "observed_at": "2026-11-10T19:07:08.085Z"
+          },
+          {
+            "sequence": 3,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+            "tip_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+            "observed_at": "2026-11-10T19:07:09.107Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:09.232Z",
+    "event": "trial_passed",
+    "run": 2,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "recommitted": {
+      "tip": {
+        "number": "0x18",
+        "hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235"
+      },
+      "tx": {
+        "block_hash": "0xaeb02069b289e7670a7deba297adc07e0544c78501ea4ce3321ca91b5dde5235",
+        "block_number": "0x18",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    },
+    "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\external-run-2-1794337619839"
+  },
+  {
+    "time": "2026-11-10T19:07:14.107Z",
+    "event": "partition",
+    "run": 3,
+    "commonTip": "0x4fd5cdaea00d4724cb89285eb4459afde41b6808cf7dcad6c442d6d4ab5d8f23",
+    "height": "0xd"
+  },
+  {
+    "time": "2026-11-10T19:07:15.188Z",
+    "event": "payment_committed",
+    "run": 3,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "before": {
+      "tip": {
+        "number": "0x10",
+        "hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457"
+      },
+      "tx": {
+        "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+        "block_number": "0x10",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    }
+  },
+  {
+    "time": "2026-11-10T19:07:15.191Z",
+    "event": "external_apps_paid",
+    "run": 3,
+    "pids": [
+      47656,
+      45448
+    ],
+    "persistedBefore": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+          "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+          "checked_at": "2026-11-10T19:07:15.187Z",
+          "last_error": null,
+          "observations": 2
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.187Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+          "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+          "checked_at": "2026-11-10T19:07:15.174Z",
+          "last_error": null,
+          "observations": 3
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.174Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:17.694Z",
+    "event": "external_rollback",
+    "run": 3,
+    "persistedAfter": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+          "checked_at": "2026-11-10T19:07:17.558Z",
+          "last_error": null,
+          "observations": 16
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.187Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+          "checked_at": "2026-11-10T19:07:17.591Z",
+          "last_error": null,
+          "observations": 17
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.174Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+            "observed_at": "2026-11-10T19:07:17.439Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:18.147Z",
+    "event": "same_database_repaired",
+    "run": 3,
+    "oldPid": 47656,
+    "newPid": 40872,
+    "database": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\external-run-3-1794337629440\\buggy.sqlite",
+    "repaired": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+          "checked_at": "2026-11-10T19:07:18.037Z",
+          "last_error": null,
+          "observations": 17
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.187Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+            "observed_at": "2026-11-10T19:07:18.037Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "UNCONFIRMED",
+          "last_tx_status": "pending",
+          "canonical": 0,
+          "block_hash": null,
+          "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+          "checked_at": "2026-11-10T19:07:18.024Z",
+          "last_error": null,
+          "observations": 20
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.174Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+            "observed_at": "2026-11-10T19:07:17.439Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:18.148Z",
+    "event": "reorg_observed",
+    "run": 3,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "after": {
+      "tip": {
+        "number": "0x14",
+        "hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d"
+      },
+      "tx": {
+        "block_hash": null,
+        "block_number": null,
+        "reason": null,
+        "status": "pending",
+        "tx_index": null
+      },
+      "input": "live",
+      "output": "unknown"
+    },
+    "oldBlock": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+    "canonicalAtOldHeight": "0xf6de1d84e71b9938622a7a4e802699745dbdb076b2f92fe426825221972cb4ea",
+    "applicationBefore": {
+      "buggy": "PAID",
+      "correct": "PAID"
+    },
+    "applicationAfter": {
+      "buggy": "PAID",
+      "correct": "UNCONFIRMED"
+    },
+    "assertions": {
+      "buggyWatcher": "FAIL (expected negative control)",
+      "rollbackWatcher": "PASS"
+    }
+  },
+  {
+    "time": "2026-11-10T19:07:18.761Z",
+    "event": "external_recommitted",
+    "run": 3,
+    "persistedRecommitted": [
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+          "tip_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+          "checked_at": "2026-11-10T19:07:18.716Z",
+          "last_error": null,
+          "observations": 20
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "buggy",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.187Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+            "observed_at": "2026-11-10T19:07:18.037Z"
+          },
+          {
+            "sequence": 3,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+            "tip_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+            "observed_at": "2026-11-10T19:07:18.716Z"
+          }
+        ]
+      },
+      {
+        "order": {
+          "id": "001",
+          "tx_hash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+          "status": "PAID",
+          "last_tx_status": "committed",
+          "canonical": 1,
+          "block_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+          "tip_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+          "checked_at": "2026-11-10T19:07:18.681Z",
+          "last_error": null,
+          "observations": 24
+        },
+        "transitions": [
+          {
+            "sequence": 1,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "tip_hash": "0x3a950efd6cfd574ae83c6e60f785dd94b7753e4c341500f62da8bdb6c3ee1457",
+            "observed_at": "2026-11-10T19:07:15.174Z"
+          },
+          {
+            "sequence": 2,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "PAID",
+            "to_status": "UNCONFIRMED",
+            "observed_tx_status": "pending",
+            "block_hash": null,
+            "tip_hash": "0x7edb2b81d08030be08f267f7e27c5c2cf09bb52934add962c2f333be561e714d",
+            "observed_at": "2026-11-10T19:07:17.439Z"
+          },
+          {
+            "sequence": 3,
+            "order_id": "001",
+            "mode": "correct",
+            "from_status": "UNCONFIRMED",
+            "to_status": "PAID",
+            "observed_tx_status": "committed",
+            "block_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+            "tip_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+            "observed_at": "2026-11-10T19:07:18.681Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "time": "2026-11-10T19:07:18.765Z",
+    "event": "trial_passed",
+    "run": 3,
+    "txHash": "0xf08aa6e421fdb6d3c3286fd3e139651462e339d2cc02f326d6451404e2a2f621",
+    "recommitted": {
+      "tip": {
+        "number": "0x17",
+        "hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f"
+      },
+      "tx": {
+        "block_hash": "0x4300dd9705bfa10de8ceb8eaa492ec48f4fb50f251df3f0937b29b4647c0654f",
+        "block_number": "0x17",
+        "reason": null,
+        "status": "committed",
+        "tx_index": "0x1"
+      },
+      "input": "unknown",
+      "output": "live"
+    },
+    "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\CKB\\reorg-spike\\external-run-3-1794337629440"
+  },
+  {
+    "time": "2026-11-10T19:07:18.974Z",
+    "event": "spike_passed",
+    "trials": 3
+  }
+]
