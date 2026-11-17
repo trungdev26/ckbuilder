@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: relative output is resolved beside config
+ok 1 - relative output is resolved beside config
+  ---
+  duration_ms: 3.3438
+  type: 'test'
+  ...
+# Subtest: reject duplicate ports
+ok 2 - reject duplicate ports
+  ---
+  duration_ms: 14.6083
+  type: 'test'
+  ...
+# Subtest: reject remote database
+ok 3 - reject remote database
+  ---
+  duration_ms: 10.8046
+  type: 'test'
+  ...
+# Subtest: reject non-file binary
+ok 4 - reject non-file binary
+  ---
+  duration_ms: 10.0569
+  type: 'test'
+  ...
+# Subtest: reject invalid trial count
+ok 5 - reject invalid trial count
+  ---
+  duration_ms: 9.5635
+  type: 'test'
+  ...
+# Subtest: occupied port fails preflight
+ok 6 - occupied port fails preflight
+  ---
+  duration_ms: 14.104
+  type: 'test'
+  ...
+# Subtest: healthy canonical snapshot passes
+ok 7 - healthy canonical snapshot passes
+  ---
+  duration_ms: 0.6785
+  type: 'test'
+  ...
+# Subtest: dead worker cannot pass on retained data
+ok 8 - dead worker cannot pass on retained data
+  ---
+  duration_ms: 0.1027
+  type: 'test'
+  ...
+# Subtest: missing RPC cannot pass
+ok 9 - missing RPC cannot pass
+  ---
+  duration_ms: 0.0703
+  type: 'test'
+  ...
+# Subtest: stale checkpoint cannot pass
+ok 10 - stale checkpoint cannot pass
+  ---
+  duration_ms: 0.0585
+  type: 'test'
+  ...
+# Subtest: mixed snapshot cannot pass
+ok 11 - mixed snapshot cannot pass
+  ---
+  duration_ms: 0.1472
+  type: 'test'
+  ...
+# Subtest: canonical wrong application state fails
+ok 12 - canonical wrong application state fails
+  ---
+  duration_ms: 0.0606
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 122.909

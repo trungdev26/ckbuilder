@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-17T17:39:00.654Z",
+  "ownedCkbAndCelloraProcesses": 0,
+  "testPortsListening": [],
+  "postgresCluster": "reorg-spike/pg/data",
+  "postgresStopped": true,
+  "dataRetained": true
+}

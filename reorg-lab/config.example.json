@@ -1,0 +1,12 @@
+{
+  "ckbBin": "./tools/ckb.exe",
+  "alwaysSuccess": "./tools/always_success",
+  "celloraBin": "./tools/cellora-indexer.exe",
+  "psqlBin": "C:/Program Files/PostgreSQL/17/bin/psql.exe",
+  "adminUrl": "postgres://cellora@127.0.0.1:5435/postgres",
+  "ports": {"rpcA": 20114, "p2pA": 20115, "rpcB": 20214, "p2pB": 20215, "metrics": 20100},
+  "outputDir": "runs",
+  "trials": 1,
+  "pollMs": 1000,
+  "deadlineMs": 30000
+}

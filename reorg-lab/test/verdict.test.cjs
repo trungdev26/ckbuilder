@@ -1,0 +1,10 @@
+const assert = require('node:assert/strict');
+const { test } = require('node:test');
+const { evaluate } = require('../src/service-verdict.cjs');
+const good = {error:null,serviceAlive:true,checkpoint:{height:10,hash:'a'},cells:{input:{createdHeight:0,consumedHeight:10}}};
+test('healthy canonical snapshot passes',()=>assert.equal(evaluate(good,'a',10,true).verdict,'PASS'));
+test('dead worker cannot pass on retained data',()=>assert.equal(evaluate({...good,serviceAlive:false},'a',10,true).verdict,'INCONCLUSIVE'));
+test('missing RPC cannot pass',()=>assert.equal(evaluate(good,null,10,true).verdict,'ERROR'));
+test('stale checkpoint cannot pass',()=>assert.equal(evaluate(good,'a',11,true).verdict,'INCONCLUSIVE'));
+test('mixed snapshot cannot pass',()=>assert.equal(evaluate({...good,cells:{output:{createdHeight:11}}},'a',10,true).verdict,'ERROR'));
+test('canonical wrong application state fails',()=>assert.equal(evaluate(good,'a',10,false).verdict,'FAIL'));

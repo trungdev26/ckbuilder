@@ -1,0 +1,9 @@
+{
+  "name": "ckb-reorg-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local CKB application rollback testing prototype",
+  "engines": {"node": ">=22.13.0"},
+  "scripts": {"test": "node --test test/*.test.cjs", "doctor": "node src/cli.cjs doctor", "demo": "node src/cli.cjs run"},
+  "dependencies": {"@ckb-ccc/core": "1.12.2"}
+}
